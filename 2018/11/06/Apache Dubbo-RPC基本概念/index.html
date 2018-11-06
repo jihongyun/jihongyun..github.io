@@ -12,7 +12,7 @@
     
     
     
-    <title>404 | 鸿运的博客</title>
+    <title>RPC基本概念 | 鸿运的博客</title>
     <link href="”http://yoursite.com“" rel="”prefetch”">
 
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -175,10 +175,64 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 gal-right" id="mainstay">
-                    <!-- 搜索页面(尽可能接近ZanBlog搜索功能) -->
+                    
+<article class="article well article-body" id="article">
+    <div class="breadcrumb">
+        <i class="fa fa-home"></i>
+        <a href="http://yoursite.com">鸿运的博客</a>
+        >
+        <span>RPC基本概念</span>
+    </div>
+    <!-- 大型设备详细文章 -->
+    <div class="hidden-xs">
+        <div class="title-article">
+            <h1>
+                <a href="/2018/11/06/Apache Dubbo-RPC基本概念/">RPC基本概念</a>
+            </h1>
+        </div>
+        <div class="tag-article">
+            
+            <span class="label label-gal">
+                <i class="fa fa-calendar"></i> 2018-11-06
+            </span>
+            
+        </div>
+    </div>
+    <!-- 小型设备详细文章 -->
+    <div class="visible-xs">
+        <center>
+            <div class="title-article">
+                <h4>
+                    <a href="/2018/11/06/Apache Dubbo-RPC基本概念/">RPC基本概念</a>
+                </h4>
+            </div>
+            <p>
+                <i class="fa fa-calendar"></i> 2018-11-06
+            </p>
+            <p>
+                
+                
+            </p>
+        </center>
+    </div>
+    <div class="content-article">
+        <h2 id="RPC协议"><a href="#RPC协议" class="headerlink" title="RPC协议"></a>RPC协议</h2><p>远程过程调用协议，属于一种规范，RPC跨越了传输层和应用层。采用客户机/服务器模式。请求程序就是一个客户机，而服务提供程序就是一个服务器<br>优点：使开发包括网络分布式程序在内的应用程序更加容易。</p>
+<h2 id="RPC框架"><a href="#RPC框架" class="headerlink" title="RPC框架"></a>RPC框架</h2><p>进程间通信（IPC）：是在多任务操作系统或联网的计算机之间运行的程序和进程所用的通信技术。有两种类型的进程间通信（IPC）。<br>本地过程调用（LPC）：LPC用在多任务操作系统中，使得同时运行的任务能互相会话。这些任务共享内存空间使任务同步和互相发送信息。<br>远程过程调用（RPC）：Unix<br>的生态系统中 RPC 可以在同一台电脑上不同进程进行，也可以在不同电脑上进行。<br>PRC实现了不同。<br>综上：RPC 或 LPC是上层建筑，IPC 是底层基础。<br>RPC 框架有很多：比如 Thrift、dubbo、grpc 等。 </p>
+<h2 id="RPC-与-HTTP、TCP、UDP、Socket-的区别"><a href="#RPC-与-HTTP、TCP、UDP、Socket-的区别" class="headerlink" title="RPC 与 HTTP、TCP、UDP、Socket 的区别"></a>RPC 与 HTTP、TCP、UDP、Socket 的区别</h2><p> TCP/UDP:  都是传输协议，主要区别是 tcp 协议连接需要 3 次握手，断开需要四次挥手，是通过流来传输的，就是确定连接后，一直发送信息，传完后断开。udp 不需要进行连接，<br>直接把信息封装成多个报文，直接发送。所以 udp 的速度更快写，但是不保证数据的完整性。<br> Http：超文本传输协议是一种应用层协议，建立在 TCP 协议之上<br> Socket：是在应用程序层面上对 TCP/IP 协议的封装和应用。<br> RPC 是一种通过网络从远程计算机程序上请求服务，而不需要了解底层网络技术的协议。所以 RPC 的实现可以通过不同的协议去实现比如可以使 http、RMI 等。</p>
+<h2 id="RPC-的运行流程"><a href="#RPC-的运行流程" class="headerlink" title="RPC 的运行流程"></a>RPC 的运行流程</h2><p><img src="https://gss3.bdstatic.com/7Po3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=88d234b10b46f21fdd395601974d0005/18d8bc3eb13533fadd93e964a9d3fd1f41345b56.jpg" alt=""></p>
 
-<!-- 404 自定义页面 -->
-<!-- 有其他想自定义的page在这里添加判断条件, 并且写好对应的模板渲染文件 -->
+    </div>
+</article>
+
+
+<div id="comments-template"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script>
+	if(!window.commentConfig) {
+      window.commentConfig = {}
+      window.commentConfig.title = 'RPC基本概念'
+    }
+</script>
 
                 </div>
                 <aside class="col-md-4 gal-left" id="sidebar">
@@ -294,13 +348,13 @@
         <div class="panel panel-gal hidden-xs" data-aos="fade-up" data-aos-duration="2000">
             <ul class="nav nav-pills pills-gal">
                 <li class="">
-                    <a href="/404/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                    <a href="/2018/11/06/Apache Dubbo-RPC基本概念/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
                 </li>
                 <li class="">
-                    <a href="/404/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                    <a href="/2018/11/06/Apache Dubbo-RPC基本概念/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
                 </li>
                 <li class="">
-                    <a href="/404/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                    <a href="/2018/11/06/Apache Dubbo-RPC基本概念/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
                 </li>
             </ul>
             <div class="tab-content">
@@ -413,7 +467,7 @@
 <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
     if(window.commentConfig) {
-      window.commentConfig.id = 'Mon Nov 05 2018 20:48:23 GMT+0800'
+      window.commentConfig.id = 'Tue Nov 06 2018 22:53:33 GMT+0800'
       window.commentConfig.owner = '43433573'
       window.commentConfig.repo = 'jihongyun.github.io'
       window.commentConfig.client_id = '8ff2b768145a7af1fdba'
@@ -421,7 +475,7 @@
       window.commentConfig.redirect_uri = ''
     } else {
       window.commentConfig = {
-      	id: 'Mon Nov 05 2018 20:48:23 GMT+0800',
+      	id: 'Tue Nov 06 2018 22:53:33 GMT+0800',
         owner: '43433573',
         repo: 'jihongyun.github.io',
         client_id: '8ff2b768145a7af1fdba',
