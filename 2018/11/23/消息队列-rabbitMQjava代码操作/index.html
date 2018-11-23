@@ -108,24 +108,24 @@
 
 
 
-  <meta name="description" content="迭代器数据迭代，方便元素输出 应用场景集合：list set迭代器与for循环有啥区别？ 迭代器的优点demo演示">
+  <meta name="description" content="导入依赖12345&amp;lt;dependency&amp;gt;  &amp;lt;groupId&amp;gt;com.rabbitmq&amp;lt;/groupId&amp;gt;  &amp;lt;artifactId&amp;gt;amqp-client&amp;lt;/artifactId&amp;gt;  &amp;lt;version&amp;gt;4.1.0&amp;lt;/version&amp;gt;&amp;lt;/dependency&amp;gt; 提供者Send类123456789101">
 <meta property="og:type" content="article">
-<meta property="og:title" content="迭代器">
-<meta property="og:url" content="http://yoursite.com/2018/11/09/设计模式-迭代器/index.html">
+<meta property="og:title" content="java代码中操作rabbitMQ">
+<meta property="og:url" content="http://yoursite.com/2018/11/23/消息队列-rabbitMQjava代码操作/index.html">
 <meta property="og:site_name" content="鸿运的博客">
-<meta property="og:description" content="迭代器数据迭代，方便元素输出 应用场景集合：list set迭代器与for循环有啥区别？ 迭代器的优点demo演示">
+<meta property="og:description" content="导入依赖12345&amp;lt;dependency&amp;gt;  &amp;lt;groupId&amp;gt;com.rabbitmq&amp;lt;/groupId&amp;gt;  &amp;lt;artifactId&amp;gt;amqp-client&amp;lt;/artifactId&amp;gt;  &amp;lt;version&amp;gt;4.1.0&amp;lt;/version&amp;gt;&amp;lt;/dependency&amp;gt; 提供者Send类123456789101">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-09T11:22:59.600Z">
+<meta property="og:updated_time" content="2018-11-23T03:48:03.039Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="迭代器">
-<meta name="twitter:description" content="迭代器数据迭代，方便元素输出 应用场景集合：list set迭代器与for循环有啥区别？ 迭代器的优点demo演示">
+<meta name="twitter:title" content="java代码中操作rabbitMQ">
+<meta name="twitter:description" content="导入依赖12345&amp;lt;dependency&amp;gt;  &amp;lt;groupId&amp;gt;com.rabbitmq&amp;lt;/groupId&amp;gt;  &amp;lt;artifactId&amp;gt;amqp-client&amp;lt;/artifactId&amp;gt;  &amp;lt;version&amp;gt;4.1.0&amp;lt;/version&amp;gt;&amp;lt;/dependency&amp;gt; 提供者Send类123456789101">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/11/09/设计模式-迭代器/">
+  <link rel="canonical" href="http://yoursite.com/2018/11/23/消息队列-rabbitMQjava代码操作/">
 
 
 
@@ -135,7 +135,7 @@
   };
 </script>
 
-  <title>迭代器 | 鸿运的博客</title>
+  <title>java代码中操作rabbitMQ | 鸿运的博客</title>
   
 
 
@@ -286,7 +286,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/09/设计模式-迭代器/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/23/消息队列-rabbitMQjava代码操作/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Bill">
@@ -303,7 +303,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">迭代器
+          <h1 class="post-title" itemprop="name headline">java代码中操作rabbitMQ
               
             
           </h1>
@@ -328,30 +328,16 @@
                 
               
 
-              <time title="创建时间：2018-11-09 19:22:59" itemprop="dateCreated datePublished" datetime="2018-11-09T19:22:59+08:00">2018-11-09</time>
+              <time title="创建时间：2018-11-23 11:48:02 / 修改时间：11:48:03" itemprop="dateCreated datePublished" datetime="2018-11-23T11:48:02+08:00">2018-11-23</time>
             
 
+            
+              
+
+              
             
           </span>
 
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/设计模式/" itemprop="url" rel="index"><span itemprop="name">设计模式</span></a></span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -380,9 +366,9 @@
       
 
       
-        <h2 id="迭代器"><a href="#迭代器" class="headerlink" title="迭代器"></a>迭代器</h2><p>数据迭代，方便元素输出</p>
-<h2 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h2><p>集合：list set<br>迭代器与for循环有啥区别？</p>
-<h2 id="迭代器的优点"><a href="#迭代器的优点" class="headerlink" title="迭代器的优点"></a>迭代器的优点</h2><h2 id="demo演示"><a href="#demo演示" class="headerlink" title="demo演示"></a>demo演示</h2>
+        <h3 id="导入依赖"><a href="#导入依赖" class="headerlink" title="导入依赖"></a>导入依赖</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line">  &lt;groupId&gt;com.rabbitmq&lt;/groupId&gt;</span><br><span class="line">  &lt;artifactId&gt;amqp-client&lt;/artifactId&gt;</span><br><span class="line">  &lt;version&gt;4.1.0&lt;/version&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="提供者Send类"><a href="#提供者Send类" class="headerlink" title="提供者Send类"></a>提供者Send类</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">package com.jihongyun;</span><br><span class="line"></span><br><span class="line">import com.rabbitmq.client.Channel;</span><br><span class="line">import com.rabbitmq.client.Connection;</span><br><span class="line">import com.rabbitmq.client.ConnectionFactory;</span><br><span class="line"></span><br><span class="line">import java.io.IOException;</span><br><span class="line">import java.util.concurrent.TimeoutException;</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line"> * Created by xlf on 2018/11/23.</span><br><span class="line"> */</span><br><span class="line">public class Sender &#123;</span><br><span class="line">    private static String QUEUE_NAME = &quot;hello&quot;;</span><br><span class="line">    public static void main(String[] args) throws IOException, TimeoutException &#123;</span><br><span class="line">        ConnectionFactory connectionFactory = new ConnectionFactory();</span><br><span class="line">        connectionFactory.setHost(&quot;localhost&quot;);</span><br><span class="line">        connectionFactory.setPort(5672);</span><br><span class="line">        connectionFactory.setVirtualHost(&quot;test&quot;);</span><br><span class="line">        connectionFactory.setUsername(&quot;jihongyun&quot;);</span><br><span class="line">        connectionFactory.setPassword(&quot;jihongyun&quot;);</span><br><span class="line">        //创建连接</span><br><span class="line">        Connection connection = connectionFactory.newConnection();</span><br><span class="line">        Channel channel = connection.createChannel();</span><br><span class="line">        //制定消息队列</span><br><span class="line">        channel.queueDeclare(QUEUE_NAME, false, false, false, null);</span><br><span class="line">        //将消息推送至rabbitMq</span><br><span class="line">        String msg = &quot;hello rebbitMq&quot;;</span><br><span class="line">        channel.basicPublish(&quot;&quot;,QUEUE_NAME,null,msg.getBytes(&quot;utf-8&quot;));</span><br><span class="line">        //关闭资源</span><br><span class="line">        channel.close();</span><br><span class="line">        connection.close();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="receiver类代码"><a href="#receiver类代码" class="headerlink" title="receiver类代码"></a>receiver类代码</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">package com.jihongyun;</span><br><span class="line"></span><br><span class="line">import com.rabbitmq.client.*;</span><br><span class="line">import java.io.IOException;</span><br><span class="line">import java.util.concurrent.TimeoutException;</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line"> * Created by xlf on 2018/11/23.</span><br><span class="line"> */</span><br><span class="line">public class Receiver &#123;</span><br><span class="line">    public static void main(String[] args) throws IOException, TimeoutException &#123;</span><br><span class="line">        ConnectionFactory connectionFactory = new ConnectionFactory();</span><br><span class="line">        connectionFactory.setHost(&quot;localhost&quot;);</span><br><span class="line">        connectionFactory.setPort(5672);</span><br><span class="line">        connectionFactory.setVirtualHost(&quot;test&quot;);</span><br><span class="line">        connectionFactory.setUsername(&quot;jihongyun&quot;);</span><br><span class="line">        connectionFactory.setPassword(&quot;jihongyun&quot;);</span><br><span class="line">        Connection connection = connectionFactory.newConnection();</span><br><span class="line">        Channel channel = connection.createChannel();</span><br><span class="line">        //指定队列</span><br><span class="line">        channel.queueDeclare(&quot;hello&quot;, false, false, false, null);</span><br><span class="line">        //DefaultConsumer类实现了Consumer接口，通过传入一个频道，</span><br><span class="line">        // 告诉服务器我们需要那个频道的消息，如果频道中有消息，就会执行回调函数handleDelivery</span><br><span class="line">        Consumer consumer=new DefaultConsumer(channel)&#123;</span><br><span class="line">            @Override</span><br><span class="line">            public void handleDelivery(String consumerTag, Envelope envelope, AMQP .BasicProperties properties, byte[] body) throws IOException &#123;</span><br><span class="line">                String msg=new String(body,&quot;utf-8&quot;);</span><br><span class="line">                System.out.println(&quot;消费方收到消息--&gt;&quot;+msg);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;;</span><br><span class="line">        //自动回复队列应答 -- RabbitMQ中的消息确认机制</span><br><span class="line">        channel.basicConsume(&quot;hello&quot;, true, consumer);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -409,8 +395,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/11/09/面试题-web面试题/" rel="next" title="web面试题">
-                <i class="fa fa-chevron-left"></i> web面试题
+              <a href="/2018/11/23/消息队列--rabbitMq安装与测试/" rel="next" title="RabbitMq 安装与测试">
+                <i class="fa fa-chevron-left"></i> RabbitMq 安装与测试
               </a>
             
           </div>
@@ -419,8 +405,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/11/13/面试题-/" rel="prev" title="同步一步，arraylist和linkedlist的区别">
-                同步一步，arraylist和linkedlist的区别 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/11/23/消息队列-rabbitMQ理解/" rel="prev" title="rabbitMQ理解">
+                rabbitMQ理解 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -562,7 +548,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#迭代器"><span class="nav-number">1.</span> <span class="nav-text">迭代器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#应用场景"><span class="nav-number">2.</span> <span class="nav-text">应用场景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#迭代器的优点"><span class="nav-number">3.</span> <span class="nav-text">迭代器的优点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#demo演示"><span class="nav-number">4.</span> <span class="nav-text">demo演示</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#导入依赖"><span class="nav-number">1.</span> <span class="nav-text">导入依赖</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#提供者Send类"><span class="nav-number">2.</span> <span class="nav-text">提供者Send类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#receiver类代码"><span class="nav-number">3.</span> <span class="nav-text">receiver类代码</span></a></li></ol></div>
             
 
           </div>
